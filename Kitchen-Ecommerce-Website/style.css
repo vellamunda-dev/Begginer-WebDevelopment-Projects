@@ -1,0 +1,851 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+  /* Website logo in the Header */
+
+.nav-logo {
+  background-image: url("img/SLT_Logo.webp");
+  background-size: cover;
+  height: 58px;
+  width: 250px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Navigation Bar in the header*/
+
+.navbar {
+  height: 160px;
+  width: 100%;
+  background-color: white;
+  padding: 27px;
+  padding-left: 188px;
+}
+.top-navbar-options {
+  display: flex;
+  justify-content: right;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 222px;
+  color: rgba(85, 85, 85, 0.904);
+  letter-spacing: 0.25px;
+}
+.top-navbar-options i, span {
+  cursor: pointer;
+}
+.navicon-downarrow {
+  font-size: 10px;
+  margin-left: 15px;
+  color: rgb(5, 4, 4);
+}
+.nav-opt-location .location-text {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 8px;
+}
+.navicon-sign i {
+  margin-left: 30px;
+}
+.navicon-sign span {
+  margin-left: 7px;
+}
+
+.navopt-whish i {
+  margin-left: 30px;
+}
+.navopt-whish span {
+  margin-left: 5px;
+}
+.cart-icon {
+  margin-left: 30px;
+}
+
+.bottom-navmenu-options{
+  display: flex;
+  justify-content: space-around;
+  width: 857px;;
+ 
+  color: #555555;
+  font-size: 16px;
+  letter-spacing: .5px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.bottom-navbar-options p{
+  cursor: pointer;
+}
+.bottom-navbar-options {
+  display: flex;
+  
+}
+  /* Search bar in the header */
+
+.Navsearch-icon {
+  display: flex;
+  width: 314px;
+  height: 40px;
+  margin-top: -25px;
+  margin-left: 325px;
+  justify-content: space-evenly;
+  border: 1px solid rgb(170, 167, 167);
+  padding: 10px 12px;
+}
+.search-input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  color: #777777;
+}
+.search-input::placeholder {
+  color: #777777;
+}
+.search-input:focus::placeholder {
+  color: #535252;
+}
+.search-input:focus {
+  outline: none;
+}
+.searh-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Announcement Bar under the Navigation Bar */
+
+.announsement-bar {
+  color:  white;
+  height: 41px;
+  width: 100%;
+  background-color: #444644;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 400;
+  text-size-adjust: 100%;
+}
+.announsement-bar-textlink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 2nd menu Bar under the Nav Bar */
+
+
+.menu-bar {
+  margin-left: 5.12%;
+  margin-right: 5.12%;
+  width : 1680px;
+  max-width: 1680px;
+  height: 37px;
+  padding: 10px 79px 10px 79px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  overflow: auto;
+  gap: 8px;
+
+}
+.menu-bar p {
+  background-color: rgb(239, 239, 239);
+  padding-inline-start: 6px;
+  padding-inline-end: 6px;
+  cursor: pointer;
+  text-rendering: auto;
+  align-items: center;
+}
+
+/* Her0 Section of the Website */
+
+/* First hero image */
+
+.hero-img {
+  background-image: url("img/First-Hero-image.jpg");
+  background-size: cover;
+  height: 160px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Second Hero Image */ 
+
+.Second-HeroImage{
+  padding-top: 34px;
+  padding-bottom: 17px;
+  height: 73vh;
+
+}
+.secheroimag {
+  background-image: url("img/Second-Heroimage.webp");
+  background-size: cover;
+  height: auto;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Third Hero Image */
+
+
+.third-heroimage {
+  height: 150px;
+  width: 100%;
+  background-image: url("img/Hero-image3.webp");
+  background-size: cover;
+  margin-bottom: 37px;
+  cursor: pointer;
+}
+
+/* Gifts Section */
+
+.Gift-Section {
+  height: 512px;
+  width: auto;
+  margin-left: 95px;
+  margin-right: 95px;
+  color: rgb(0, 0, 0);
+}
+
+.Gift-Section-toptext {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.shop-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: underline;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.gift-text {
+  font-size: 40px;
+  letter-spacing: 1.8px;
+}
+
+/* Shop Section Containers */
+
+.shop-section {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+
+}
+.box {
+  width: 24.3%;
+  height: 409px;
+  border: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.box1 {
+  background-image: url("img/Shop-Section-Box1.webp");
+  background-size: cover;
+}
+.box2 {
+  background-image: url("img/Shop-Section-Box2.webp");
+  background-size: cover;
+}
+.box3 {
+  background-image: url("img/Shop-section-Box3.webp");
+  background-size: cover;
+}
+.box4 {
+  background-image: url("img/Shop-section-Box4.webp");
+  background-size: cover;
+}
+
+/* Shop Section Containers bottom Text */
+
+.Gift-Section-downtext {
+  display: flex;
+  justify-content: space-between;
+
+}
+.Gift-Section-downtext p {
+  width: 24.3%;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Wensite content images Section */
+
+.content-image1 {
+  margin-top: 98px;
+  height: 183px;
+  background-image: url("img/Content-image1.webp");
+  background-size: cover;
+  margin-bottom: 34px;
+  cursor: pointer;
+}
+.content-image2 {
+  height: 767px;
+  width: 100%;
+  background-image: url("img/Content-image2.jpg");
+  background-size: cover;
+  margin-bottom: 34px;
+  cursor: pointer;
+}
+.content-image3 {
+  height: 238.97px;
+  width: 100%;
+  background-image: url("img/Content-Image3.webp");
+  background-size: cover;
+  margin-bottom: 34px;
+  cursor: pointer;
+}
+
+/* Websites Content Shop Boxes */
+
+.Content-Section {
+  height: 481px;
+  width: auto;
+  margin-left: 95px;
+  margin-right: 95px;
+  color: rgb(0, 0, 0);
+}
+
+.Content-Section-Box {
+  height: 410px;
+  width: auto;
+  margin-bottom: 16px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+.BOX {
+  width: 24.3%;
+  height: 409px;
+  border: none;
+  cursor: pointer;
+}
+.BOX1 {
+  background-image: url("img/Content-Boximage5.webp");
+  background-size: cover;
+}
+.BOX2 {
+  background-image: url("img/Content-Box2.webp");
+  background-size: cover;
+}
+.BOX3 {
+  background-image: url("img/Content-Boximage3.webp");
+  background-size: cover;
+}
+.BOX4 {
+  background-image: url("img/Content-Boximage\ 4.webp");
+  background-size: cover;
+}
+
+.Content-Section-downtext {
+  display: flex;
+  justify-content: space-between;
+}
+.Content-Section-downtext p {
+  width: 24.3%;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Web Content Images */
+
+.content-image4 {
+  height: 691px;
+  width: auto;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-bottom: 34px;
+  background-image: url("img/Content-image4.webp");
+  background-size: cover;
+  cursor: pointer;
+}
+.content-image5 {
+  height: 215px;
+  width: auto;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-bottom: 34px;
+  background-image: url("img/Content-image-5.webp");
+  background-size: cover;
+  cursor: pointer;
+}
+.content-image6 {
+  height: 145px;
+  width: auto;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-bottom: 100px;
+  background-image: url("img/Content-Image6.webp");
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Web Content about Cooking Classes */
+.content-Cooking {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-bottom: 17px;
+  height: 466px;
+  padding: 40px 67px 10px 67px;
+}
+.content-coking-main {
+  height: 100%;
+  width:auto;
+}
+.content-cooking-boxes {
+  height: 340px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.C-box {
+  color: white;
+  height: 340px;
+  width: 23.9%;
+}
+
+/* Seperately puuting content in each box */
+
+
+.Cooking-Box1 {
+  padding-right: 58px;
+  color: rgb(0, 0, 0);
+}
+.cooking-text-heading {
+  margin-top: 16px;
+  margin-bottom: 18px;
+  font-size: 43px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.cooking-text-description {
+  margin-bottom: 37px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.learn-button {
+  padding: 0px 30px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 50px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition: box-shadow .35s, background-color .35s, color .35s;
+}
+.learn-button:hover {
+  box-shadow: 0px 0px 0px 1px inset rgb(0, 0, 0);
+}
+.learn-button:active{
+  box-shadow: 0px 0px 0px 1px inset rgb(0, 0, 0);
+  background-color: #444644;
+  color: rgb(255, 255, 255);
+}
+
+.Cooking-Box2 {
+  background-image: url("img/Cooking-Box-image1.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.Cooking-Box3 {
+  background-image: url("img/Cooking-Box-image2.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.Cooking-Box4 {
+  background-image: url("img/Cooking-Box-image3.webp");
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Text under the Cooking Classes Section */
+.content-cooking-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-cooking-text p {
+  width: 23.9%;
+  height: 38px;
+  padding: 15px 10px 1px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Finde Stores Section */
+
+.FindStore-section {
+  margin: 17px 197px 80px 197px;
+  height: 649px;
+  width: auto;
+}
+
+.FindStore-section-Boxes {
+  height:415.5px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.fbox {
+  height: 100%;
+  width: 49%;
+}
+.findstore-box {
+  background-image: url("img/Find-Store-boximage.webp");
+  background-size: cover;
+  cursor: pointer;
+}
+.sltperk-box {
+  background-image: url("img/Slt-perks-storeimage.webp");
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Find Stores section bottom text */
+
+.FindStore-Section-text {
+  height: calc(100% - 437.5px);
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.textbox {
+  height: auto;
+  width: 49%;
+  color: rgb(0, 0, 0);
+}
+
+.InStore-heading {
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin-bottom: 29.5px;
+  color: rgba(0, 0, 0, 0.897);
+}
+.InStore-description {
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.findstore-button {
+  padding: 0px 30px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 50px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition: box-shadow .35s, background-color .35s, color .35s;
+}
+.findstore-button:hover {
+  box-shadow: 0px 0px 0px 1px inset rgb(0, 0, 0);
+}
+.findstore-button:active {
+  box-shadow: 0px 0px 0px 1px inset rgb(0, 0, 0);
+  background-color: #444644;
+  color: rgb(255, 255, 255);
+}
+
+.SltPerk-heading {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 29.5px;
+  color: rgba(0, 0, 0, 0.897);
+}
+.sltperk-description {
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.sltperk-button {
+
+  padding: 0px 30px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 50px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition: box-shadow .35s, background-color .35s, color .35s;
+}
+.sltperk-button:hover {
+  box-shadow: 0px 0px 0px 1px inset rgb(0, 0, 0);
+}
+.sltperk-button:active {
+  box-shadow: 0px 0px 0px 1px inset rgb(0, 0, 0);
+  background-color: #444644;
+  color: rgb(255, 255, 255);
+}
+
+/* Footer above image */
+
+.fotter-aboveimage {
+  height: 323px;
+  width: 100%;
+  background-image: url("img/footer-image.webp");
+  background-size: cover;
+  margin-bottom: 34px;
+  cursor: pointer;
+}
+
+/* Fotter Section */
+
+.footer-mainsection {
+  height: 550px;
+  width: 100%;
+  padding: 68px 197px 0px 197px; 
+  border-top: 1px solid rgb(0, 0, 0);
+  margin-bottom: 23px;
+}
+.footer2-subsection {
+  height: 482px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footsec {
+  width: 48%;
+  height: 100%;
+}
+
+/* First customizing the About us and experience section of the footer */
+
+.footer-aboutus-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col{
+  width: 30.8%;
+  height: 100%;
+  font-size: 12px;
+}
+.col p {
+  margin-bottom: 26px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.col p:hover {
+  color: rgba(0, 0, 0, 0.678);
+}
+/* SUR LA TABLE EXPERIENCE SECTION */
+
+.experience-col .experience-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.788);
+} 
+.experience-col .experience-heading:hover {
+  color: rgba(0, 0, 0, 0.788);
+}
+
+/* CUSTOMER SERVICE SECTION */
+
+.customerservice-col .customerheading {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.788);
+} 
+.customerservice-col .customerheading:hover {
+  color: rgba(0, 0, 0, 0.788);
+}
+
+/* ABOUT SUR LA TABLE section */
+
+.about-col .about-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.788);
+} 
+.about-col .about-heading:hover {
+  color: rgba(0, 0, 0, 0.788);
+}
+
+
+/* Adsress and contact section */
+
+.footer-address-section {
+  display: flex;
+}
+
+.adress-subsection {
+  width: 53%;
+  height: 100%;
+  padding-left: 140px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.emailcontact-subsection {
+  width: 47%;
+  height: 100%;
+  font-size: 14px;
+  
+}
+
+/* Address Subsection */
+
+.near-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color:rgba(0, 0, 0, 0.87);
+}
+.business-address {
+  margin-top: 5px;
+  
+}
+.phone-num {
+  margin-top:5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.schedule {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  text-decoration: underline;
+  color:rgba(0, 0, 0, 0.788);
+  cursor:pointer;
+}
+.schedule:hover {
+  text-decoration: none;
+}
+
+.findstore-text {
+  text-decoration: underline;
+}
+.findstore-text:hover {
+  text-decoration: none;
+}
+
+.get-text {
+  text-decoration: underline;
+}
+.get-text:hover {
+  text-decoration: none;
+}
+/* Email Contact Subsection */
+
+.email-heading {
+  color:rgba(0, 0, 0, 0.836);
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 25px;
+}
+.exclusion {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.email-inputbar {
+  height: 37px;
+  width: 212px;
+  margin-right: 6px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 0.5px solid;
+  border-right: none;
+  margin-bottom: 49px;
+}
+.email-inputbar:focus {
+  outline: none;
+}
+.signup-button {
+  color:rgba(0, 0, 0, 0.788);
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.28px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  cursor: pointer;
+  transition: box-shadow 0.35s;
+}
+
+.signup-button:hover {
+  box-shadow: 0px 0px 0px 1px inset rgb(0, 0, 0);
+}
+
+.buyoffer-text {
+  text-decoration: underline;
+  font-weight: 700;
+  color:rgba(0, 0, 0, 0.788);
+  cursor: pointer;
+}
+
+
+/* Social Icons  */
+
+.social-icons {
+  padding-right: 40px;
+  margin-top: 49px;
+  height: 27px;
+  width: auto;
+  background-color: white;
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 18px;
+  justify-content: space-between;
+}
+.social-icons i {
+  cursor: pointer;
+}
+
+.disclaimer {
+  color:rgba(0, 0, 0, 0.788);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .14px;
+  text-decoration: underline;
+}
+.disclaimer p {
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+/* last footer mata */
+
+.lastfooter-mata {
+  padding-left: 86px;
+  padding-right: 86px;
+  margin-bottom: 38px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
