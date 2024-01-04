@@ -17,7 +17,7 @@ body p {
 }
 a{
   text-decoration: none;
-  color: #5a5a5a;
+  color: rgb(15,15,15);
   font-size: 14px;
 }
 
@@ -264,31 +264,48 @@ a{
 
 /* ----------Side-Bar---------- */
 
+
 .Sidebar {
-  padding: 12px 28px 12px 12px;
   width: 240px;
-  position: sticky;
+  position: fixed;
   top: 56px;
   left: 0;
-  height: fit-content;
+  height: calc(100% - 56px);
+  overflow: scroll;
 }
 
-.sidebar-homesection a, .sidebar-subcriptions a {
+.sidebar-sections {
+  overflow: scroll;
+  padding: 12px;
+}  
+
+.sidebar-sections::-webkit-scrollbar {
+  width: 0px;
+}
+.Sidebar:hover .sidebar-sections::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-sections::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.89);
+  border-radius: 4px;
+}
+.sidebar-homesection a, .sidebar-subcriptions a, .sidebar-Explore a, .sidebar-more a {
   display: flex;
   align-items: center;
   padding: 8px 12px;
   border-radius: 8px;
   position: relative;
 }
-.sidebar-homesection a:hover, .sidebar-subcriptions a:hover{
+.sidebar-homesection a:hover, .sidebar-subcriptions a:hover, .sidebar-Explore a:hover, .sidebar-more a:hover{
   background-color: #0000000c;
   
 }
-
-.sidebar-homesection a:first-child {
-  color: #ed3833;
+.sidebar-homesection .download-icon,
+.sidebar-homesection .down-arrow {
+  opacity: 0.8;
 }
-.sidebar-homesection img {
+.sidebar-homesection img, .sidebar-Explore img, .sidebar-more img{
   width: 24px;
   margin-right: 24px;
 }
@@ -305,11 +322,13 @@ a{
 /* --------Subscriptions Section------- */
 
 
-.sidebar-subcriptions p:first-child {
+.sidebar-subcriptions p:first-child,
+.sidebar-Explore p:first-child,
+.sidebar-more p:first-child{
   font-size: 16px;
   padding: 6px 12px 4px 12px;
   font-weight: 500;
-  color:#3a3a3a;
+  color: rgb(15,15,15);
   margin-bottom: 1px;
 }
 .sidebar-subcriptions .live-icon {
@@ -323,4 +342,13 @@ a{
   width: 24px;
   border-radius: 50%;
   margin-right: 23px;
+}
+
+.sidebar-subcriptions span {
+  background-color: rgb(6, 95, 212);
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 19px;
+  border-radius: 50%;
 }
