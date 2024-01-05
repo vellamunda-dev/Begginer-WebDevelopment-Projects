@@ -10,7 +10,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  height: 100rem;
+  height: 200rem;
+}
+html {
+  font-size: 62.5%;
 }
 body p {
   margin: 0;
@@ -19,6 +22,11 @@ a{
   text-decoration: none;
   color: rgb(15,15,15);
   font-size: 14px;
+}
+
+:root {
+  --main-text-clr: rgb(15,15,15);
+  --topic-tabs-clr: rgba(0, 0, 0, 0.05);
 }
 
 /* Header Section */
@@ -49,28 +57,28 @@ a{
   flex-shrink: 1;
   align-items: center;
 }
-.hamburger-icon img {
+.menu-icon img {
   width: 24px;
 }
 .youtube-logo img {
   width: 90px;
   cursor: pointer;
 }
-.hamburger-icon {
+.menu-icon {
   padding: 8px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
 }
-.hamburger-icon:hover {
+.menu-icon:hover {
   background-color: rgba(224, 224, 224, 0.753);
 }
-.hamburger-icon:active {
+.menu-icon:active {
   background-color: rgba(197, 197, 197, 0.76);
 }
 .youtube-logo {
-  padding: 20px 14px 16px 16px;
+  padding: 19px 14px 17px 16px;
 }
 
 /* Section 2 */
@@ -157,6 +165,7 @@ a{
 }
 .search-icon img {
   width: 24px;
+  opacity: 0.84;
 }
 
 .voice-search-icon img{
@@ -265,47 +274,51 @@ a{
 /* ----------Side-Bar---------- */
 
 
-.Sidebar {
-  width: 240px;
+.sidebar {
+  width: 12%;
   position: fixed;
   top: 56px;
   left: 0;
   height: calc(100% - 56px);
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x:hidden;
+  z-index: 9;
 }
 
 .sidebar-sections {
-  overflow: scroll;
-  padding: 12px;
+  padding: 1.2rem 2.2rem 1.2rem 1.2rem;
 }  
 
-.sidebar-sections::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
   width: 0px;
 }
-.Sidebar:hover .sidebar-sections::-webkit-scrollbar {
+.sidebar:hover::-webkit-scrollbar {
   width: 8px;
 }
 
-.sidebar-sections::-webkit-scrollbar-thumb {
+.sidebar::-webkit-scrollbar-thumb {
   background-color: rgba(128, 128, 128, 0.89);
   border-radius: 4px;
 }
-.sidebar-homesection a, .sidebar-subcriptions a, .sidebar-Explore a, .sidebar-more a {
+.sidebar a {
   display: flex;
   align-items: center;
   padding: 8px 12px;
   border-radius: 8px;
   position: relative;
+  flex-wrap: wrap;
 }
-.sidebar-homesection a:hover, .sidebar-subcriptions a:hover, .sidebar-Explore a:hover, .sidebar-more a:hover{
+.sidebar a:hover {
   background-color: #0000000c;
-  
 }
-.sidebar-homesection .download-icon,
-.sidebar-homesection .down-arrow {
-  opacity: 0.8;
+.sidebar a:active {
+  background-color: #00000025;
 }
-.sidebar-homesection img, .sidebar-Explore img, .sidebar-more img{
+
+.sidebar-homesection img, 
+.sidebar-Explore img, 
+.sidebar-more img,
+.sidebar-you img{
   width: 24px;
   margin-right: 24px;
 }
@@ -318,6 +331,30 @@ a{
   margin: 12px 0px 13px 12px;
 
 }
+
+/* -------------You SideBar Section-------------- */
+
+
+#you-section-heading {
+  padding: 12px 12px;
+}
+
+#you-section-heading p {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(15,15,15);
+  margin-right: 1rem;
+}
+
+#you-greaterthen-icon {
+  width: 15px
+}
+
+
+.sidebar-you .down-arrow {
+  opacity: 0.8;
+}
+
 
 /* --------Subscriptions Section------- */
 
@@ -335,7 +372,7 @@ a{
   width: 16px;
   margin: 0;
   position: absolute;
-  right: 12px;
+  left: 18rem;
 }
 
 .sidebar-subcriptions img {
@@ -349,6 +386,134 @@ a{
   height: 4px;
   width: 4px;
   position: absolute;
-  right: 19px;
+  left: 18.5rem;
   border-radius: 50%;
+}
+
+/* ---------------SideBar bottom Text--------------- */
+
+.sidebar-bottomtext span{
+  font-size: 13px;
+  color: rgb(96,96,96);
+  font-weight: 500;
+  margin-right: 8px;
+  line-height:18px ;
+}
+
+.text-section2 {
+  padding: 12px 12px;
+}
+.text-section1 {
+  padding: 0px 12px 0px 12px;
+}
+.text-section3 {
+  padding: 16px 12px;
+}
+.text-section3 p {
+  font-size: 12px;
+  font-weight: 400;
+  color:rgb(144, 144, 144);
+}
+
+
+/* Custimizing the sidebar  */
+
+.small-sidebar {
+  width: 3.89%;
+}
+.small-sidebar body {
+  padding-left: 72px;
+}
+.small-sidebar a  {
+  font-size: 10px;
+  padding: 16px 0px 14px 0px;
+  justify-content: center;
+  flex-direction: column;
+}
+.small-sidebar img {
+  margin-right: 0;
+  margin-bottom: .7rem;
+}
+.small-sidebar .sidebar-sections {
+  padding: 0px 4px;
+
+}
+.small-sidebar #you-section-heading {
+  display: none;
+}
+.small-sidebar hr {
+  display: none;
+}
+.small-sidebar .sidebar-Explore {
+  display: none;
+}
+.small-sidebar .sidebar-subcriptions {
+  display: none;
+}
+.small-sidebar .sidebar-more {
+  display: none;
+}
+.small-sidebar .sidebar-bottomtext {
+  display: none;
+}
+.small-sidebar .show-more {
+  display: none;
+}
+.small-sidebar .youtube-music {
+  display: none;
+}
+.tab-links .topic-tabs{
+  padding-left: 5.2%;
+}
+
+/* Topic Tabs */
+
+
+.topic-tabs-container{
+  position: fixed;
+  top: 5.6rem;
+  width: 100%;
+}
+.topic-tabs{
+  padding-left: 14.2%;
+  width: 100%;
+  display: flex;
+  color:white;
+}
+
+.topic-tabs {
+  display: flex;
+  align-items: center;
+}
+.topic-tabs ul {
+  list-style-type: none;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  display: flex;
+}
+.topic-tabs li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  color: var(--main-text-clr);
+  padding: .75rem 1.2rem;
+  margin: 1.2rem 1.2rem 1.2rem 0rem;
+  background-color: var(--topic-tabs-clr);
+  flex-shrink: 0;
+  font-weight: 500;
+  border-radius: .8rem;
+  cursor: pointer;
+}
+.topic-tabs li:first-child {
+  background-color: var(--main-text-clr);
+  color: white;
+}
+
+.topic-tabs ul::-webkit-scrollbar {
+  height: 0px;
+}
+
+.topic-tabs ul::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.89);
+  border-radius: 6px;
 }
