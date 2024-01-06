@@ -483,6 +483,7 @@ a{
   top: 5.6rem;
   width: 100%;
   background-color: white;
+  z-index: 7;
 }
 .topic-tabs{
   padding-left: 14%;
